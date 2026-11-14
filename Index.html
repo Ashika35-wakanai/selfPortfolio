@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="portfolio.png">
+</head>
+
+<body>
+
+   
+    <button class="menu-btn" onclick="toggleNav()">
+        <img src="profile_shizuka/Shizuka.png" alt="Menu">
+    </button>
+    <div class="slime-hint" id="slime-hint">click me!</div>
+
+   
+    <nav id="Nav">
+        <a onclick="openPopup('home')">Home</a>
+        <a onclick="openPopup('about')">About Me</a>
+        <a onclick="openPopup('projects')">Projects</a>
+        <a onclick="openPopup('skills')">Skills</a>
+        <a onclick="openPopup('achievements')">Achievements</a>
+        <a onclick="openPopup('contact')">Contact Me</a>
+    </nav>
+
+ 
+
+  
+    <div class="window" id="home">
+        <div class="window-title">
+            <span>Home</span>
+            <button onclick="closePopup('home')">[x]</button>
+        </div>
+        <div class="window-body">
+            <p class="about-name">John Paul M. Buffe</p>
+            <p class="about-tagline">It's only a failure if I stop trying.</p>
+            <br>
+            <h2>Welcome!</h2>
+            <p>Welcome to my little portfolio. It's still under construction, and I'm still learning, but in the future it's going to be packed with more projects, skills, and achievements.</p>
+            <p style="margin-top: 10px;">By the way meet my pet slime, Shizuka. Her name means "quiet" in Japanese, just like me. I drew her myself, and she's the one you click to open the menu. In the coming years, I'm thinking of turning Shizuka into an AI agent!</p>
+        </div>
+    </div>
+
+
+    <div class="window" id="about">
+        <div class="window-title">
+            <span>About me</span>
+            <button onclick="closePopup('about')">[x]</button>
+        </div>
+        <div class="window-body">
+            <div class="about-wrap">
+                <img class="about-photo" src="profile_shizuka/Mee.jpg" alt="My picture">
+                <div>
+                    <h2>About Me</h2>
+                    <p>Hi I'm Paul a 4th year BSIT student at La Consolacion University Philippines located 
+                    in Malolos Bulacan, I'm motivated and who enjoys hard things, exploring ideas and ways to 
+                    improve my skills. I am hardworking and dedicated person always willing to take the step to 
+                    challenge myself that help me grow both personally and professionally.</p>
+                </div>
+                
+                <div class="about-footer">
+                <p><b>Education:</b> La Consolacion University Philippines, Malolos, Bulacan<br> BS Information Technology <br> 2023 - present</p>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="window" id="projects">
+        <div class="window-title">
+            <span>Projects</span>
+            <button onclick="closePopup('projects')">[x]</button>
+        </div>
+        <div class="window-body projects-body">
+
+            <div class="project">
+                <div class="shot"><img src="project_img/cafeRencontre.png" alt="Cafe Rencontre" onclick="zoomImage(this)"></div>
+                <h3>Cafe Rencontre</h3>
+                <p>Frontend design of a cafe ordering website, with a menu, categories, and search. Built with HTML, CSS, and JavaScript. I also fixed the responsiveness for both the website and mobile view. </p>
+            </div>
+
+            <div class="project">
+                <div class="shot"><img src="project_img/purposeGame.png" alt="Game" onclick="zoomImage(this)"></div>
+                <h3>Purpose</h3>
+                <p>A simple, quick adventure game to save an NPC, with NPC interaction and enemies. Made with Godot and GDScript.</p>
+            </div>
+
+            <div class="project">
+                <div class="shot"><img src="project_img/facerecog.png" alt="Game" onclick="zoomImage(this)"></div>
+                <h3>Face Recognition</h3>
+                <p><p>A simple beginner face Recognition app built with Python, OpenCV, and Tkinter. It can capture faces, train the model, and detect faces in real time.</p>
+            </div>
+
+        </div>
+    </div>
+
+    
+    <div class="window" id="skills">
+        <div class="window-title">
+            <span>Skills</span>
+            <button onclick="closePopup('skills')">[x]</button>
+        </div>
+        <div class="window-body">
+
+            <h3 class="skill-group">IDEs</h3>
+            <div class="skill-grid">
+                <div class="skill"><img src="logo/visual-studio-code.svg" alt="VSCode"><span>VS Code</span></div>
+                <div class="skill"><img src="logo/visual-studio.svg" alt="VisualStudio"><span>Visual Studio</span></div>
+                <div class="skill"><img src="logo/AndroidStudio.png" alt="Android Studio"><span>Android Studio</span></div>
+                <div class="skill"><img src="logo/pycharm.svg" alt="PyCharm"><span>PyCharm</span></div>
+                <div class="skill"><img src="logo/intellij-idea.svg" alt="IntelliJ"><span>IntelliJ</span></div>
+
+            </div>
+
+            <h3 class="skill-group">Web</h3>
+            <div class="skill-grid">
+                <div class="skill"><img src="logo/html-5.svg" alt="HTML"><span>HTML</span></div>
+                <div class="skill"><img src="logo/css-3.svg" alt="CSS"><span>CSS</span></div>
+                <div class="skill"><img src="logo/javascript.svg" alt="JavaScript"><span>JavaScript</span></div>
+               
+
+            </div>
+
+            <h3 class="skill-group">Backend</h3>
+            <div class="skill-grid">
+                <div class="skill"><img src="logo/php.svg" alt="PHP"><span>PHP</span></div>
+                <div class="skill"><img src="logo/mysql.svg" alt="MySQL"><span>MySQL</span></div>
+                <div class="skill"><img src="logo/python.svg" alt="Python"><span>Python</span></div>
+                <div class="skill"><img src="logo/java.svg" alt="Java"><span>Java</span></div>
+                <div class="skill"><img src="logo/Csh.svg" alt="C#"><span>C#</span></div>
+                
+
+            </div>
+
+            <h3 class="skill-group">Tools</h3>
+            <div class="skill-grid">
+                <div class="skill"><img src="logo/github.svg" alt="GitHub"><span>GitHub</span></div>
+            </div>
+            
+            <h3 class="skill-group">Game Dev</h3>
+            <div class="skill-grid">
+                <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/godot/godot-original.svg" alt="Godot"><span>Godot</span></div>
+                
+            </div>
+
+        </div>
+    </div>
+
+    
+    <div class="window" id="achievements">
+        <div class="window-title">
+            <span>Achievements</span>
+            <button onclick="closePopup('achievements')">[x]</button>
+        </div>
+        <div class="window-body">
+            <div class="carousel">
+                <button class="arrow left" onclick="slideCerts(-1)">&lt;</button>
+
+                <div class="cert-row" id="cert-row">
+
+                    <div class="cert-card">
+                        <div class="cert-img"><img src="certi/certificate1.png" alt="Certificate 1" onclick="zoomImage(this)"></div>
+                        <h3>Excel 2019 Associate</h3>
+                        <p>Microsoft Office Specialist in Excel</p>
+                    </div>
+
+                    <div class="cert-card">
+                        <div class="cert-img"><img src="certi/certificate2.png" alt="Certificate 2" onclick="zoomImage(this)"></div>
+                        <h3>Fundamentals of Enterprise Security</h3>
+                        <p>Fundamentals about Security.</p>
+                    </div>
+
+                    <div class="cert-card">
+                        <div class="cert-img"><img src="certi/certificate3.png" alt="Certificate 3" onclick="zoomImage(this)"></div>
+                        <h3>Foundational C3 with Microsoft</h3>
+                        <p>freeCodeCamp Certificate for C#.</p>
+                    </div>
+                  
+
+
+                </div>
+
+                <button class="arrow right" onclick="slideCerts(1)">&gt;</button>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="window" id="contact">
+        <div class="window-title">
+            <span>Contact me</span>
+            <button onclick="closePopup('contact')">[x]</button>
+        </div>
+        <div class="window-body">
+            <h2>Contact Me</h2>
+            <p>Quiet by name, but I always reply. Say hi!</p>
+            <a class="btn" href="mailto:johnpaul.buffe@email.lcup.edu.ph">johnpaul.buffe@email.lcup.edu.ph</a>
+            <a class="btn" href="https://github.com/Ashika35-wakanai" target="_blank">GitHub</a>
+            <a class="btn" href="https://www.linkedin.com/in/john-paul-99332b426/" target="_blank">Linkedin</a>
+        </div>
+    </div>
+
+    
+    <div id="zoom" onclick="closeZoom()">
+        <img id="zoom-img" src="" alt="Zoomed image">
+    </div>
+
+    <script src="nav.js"></script>
+</body>
+
+</html>

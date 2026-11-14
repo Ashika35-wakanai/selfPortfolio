@@ -1,6 +1,6 @@
 # selfPortfolio
  
-My personal portfolio website, built to show who I am, what I have learned, and the projects I have worked on. It is a blank screen with a slime mascot named Shizuka. Click her to open the menu, and each section opens as a draggable window.
+Meet Shizuka, my slime and the guide of my portfolio. Click her to open the menu, then explore my projects, skills, and achievements in draggable windows.
 
 ## Sections
  
